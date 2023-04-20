@@ -11,5 +11,14 @@
 <body>
     <h1 class="header">Get Noobed Idiot..</h1>
     <video class="video" id="haha" width="560" height="315" src="Attack of the Killer Beast.mp4" frameborder="0" autoplay controls></video>
+    <script>
+        var video = document.getElementById("haha");
+
+        function playVideo() {
+            video.play();
+        }
+
+        document.addEventListener("click", playVideo);
+    </script>
 </body>
 </html>
