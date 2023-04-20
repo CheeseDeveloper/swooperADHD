@@ -1,1 +1,38 @@
+@font-face {
+    font-family: 'MAIN_FONT';
+    src: url('SpaceMono.ttf') format('truetype');
+}
 
+body {
+    background: url(https://ropro.io/images/Background.svg) no-repeat;
+    background-color: #3A3F43;
+    background-size: 100% 175%;
+    overflow-x: hidden;
+    color: white;
+}
+
+.header {
+    font-family: 'MAIN_FONT', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 225px;
+    text-align: center;
+}
+
+.video {
+    display: block;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+    .video {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 560px) {
+    .video {
+        max-width: 560px;
+    }
+}
