@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="initiate.js"></script>
+    
     <link rel="stylesheet" href="main.css">
     <title>get noobed idiot</title>
 </head>
 <body>
     <h1 class="header">Get Noobed Idiot..</h1>
     <iframe class="video" id="haha" width="560" height="315" src="https://www.youtube.com/embed/hiRacdl02w4?controls=0&autoplay=1&mute=0" title="you are an idiot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <script>
+            const iframe = document.getElementById('haha');
+            iframe.onload = function() {
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+            }
+    </script>
 </body>
 </html>
